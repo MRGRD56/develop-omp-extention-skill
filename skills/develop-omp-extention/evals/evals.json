@@ -1,0 +1,39 @@
+{
+  "skill_name": "develop-omp-extention",
+  "evaluation_scope": "Plan-only scenario checks. These do not prove a generated extension runs, nor measure automatic skill triggering.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "You are developing from a non-OMP coding harness. Plan a new OMP extension that browses project bookmarks with a keyboard picker and saves the selected bookmark. The user wants Nerd Icons when enabled and readable output when disabled. Only produce a concrete development and verification plan; do not implement or claim commands were run. The installed OMP version and its current icon API have not yet been checked.",
+      "expected_output": "Source-first target version investigation, native UI preference, live symbol preset handling including Unicode/ASCII, safe storage, actual OMP and visual verification without invented harness APIs.",
+      "files": [],
+      "assertions": [
+        "Requires checking actual target version and source/types before selecting API",
+        "Uses resolved native theme symbols and respects Nerd, Unicode, and ASCII modes rather than forcing glyphs",
+        "Requires actual OMP TUI verification and does not claim it has already occurred"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "An existing OMP tool broke after a host upgrade. Its execute implementation names arguments (id, params, onUpdate, ctx, signal), following an official old example. It works in some unit tests, and /reload-plugins says reloaded but old behavior remains. It is linked locally. Plan the smallest investigation/fix, version decision, and GitHub release/update workflow. Do not modify files or run commands; identify what must be checked.",
+      "expected_output": "Compare actual target types/wrapper with old positional signature, inspect runtime reload scope and restart when needed, avoid forced reinstalls for every edit, independently version extension, use correct GitHub source/ref and clean-install verification.",
+      "files": [],
+      "assertions": [
+        "Verifies canonical execute signature instead of trusting old example or silencing types",
+        "Distinguishes linked source changes from process reload and does not trust reload banner alone",
+        "Separates extension release version from host version and gives OMP GitHub install syntax"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Port an OMP extension to pi only, not dual-host support. It imports @oh-my-pi/pi-tui and a deep settings module, uses pi.zod, ctx.models, theme.symbol and theme.getSymbolPreset(), and writes a custom footer. We have no installed pi version yet. Give a migration and verification plan, including local/GitHub installation and package-only updates. Do not implement or claim runtime tests passed.",
+      "expected_output": "Check current pi identity/version/exports and implementation, no automatic namespace-only port, real replacements for OMP-only APIs, pi-specific manifest/install/update syntax, native pi UI/icon investigation, independent runtime proof, no unnecessary dual adapter.",
+      "files": [],
+      "assertions": [
+        "Inspects actual pi version/namespace and treats OMP-only APIs as requiring real alternatives",
+        "Chooses a single-target port without unnecessary dual-host compatibility scaffolding",
+        "Uses pi-specific package/install/update semantics and warns that bare pi update may update the host"
+      ]
+    }
+  ]
+}
